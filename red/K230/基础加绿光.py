@@ -123,7 +123,7 @@ while True:
                         uart.write(pack_data(rect_coords[int(byte[1])], 0x01))
                         print('send:', rect_coords[int(byte[1])])
 
-    # 矩形检测逻辑（来自K230）
+    # 矩形检测逻辑
     parse_uart()
 
     if trigger_rect == 1:
